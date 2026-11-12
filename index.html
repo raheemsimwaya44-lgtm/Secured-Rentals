@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Secured Rentals: charger plates, dinnerware and glassware for weddings and events in Clarence-Rockland, Ontario.">
+<meta name="description" content="Secured Rentals: 6 ft and 4 ft tables, adult and kids’ chairs, plus charger plates, dinnerware and glassware, for weddings and events in Clarence-Rockland, Ontario.">
 <title>Secured Rentals</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%22-150%20-150%20300%20300%22%3E%3Cg%20id%3D%22lg-emblem-g%22%3E%0A%20%20%20%20%20%20%3Ccircle%20r%3D%22150%22%20fill%3D%22%23C29A45%22/%3E%0A%20%20%20%20%20%20%3Ccircle%20r%3D%22141%22%20fill%3D%22none%22%20stroke%3D%22%239C772B%22%20stroke-width%3D%222%22/%3E%0A%20%20%20%20%20%20%3Ccircle%20r%3D%22132%22%20fill%3D%22%231F3B31%22/%3E%0A%20%20%20%20%20%20%3Cg%20id%3D%22lg-ch%22%3E%0A%20%20%20%20%20%20%20%20%3Crect%20x%3D%22-25%22%20y%3D%22-118%22%20width%3D%2250%22%20height%3D%229%22%20rx%3D%224.5%22%20fill%3D%22%239C772B%22/%3E%0A%20%20%20%20%20%20%20%20%3Crect%20x%3D%22-22%22%20y%3D%22-105%22%20width%3D%2244%22%20height%3D%2238%22%20rx%3D%2211%22%20fill%3D%22%23C29A45%22/%3E%0A%20%20%20%20%20%20%3C/g%3E%0A%20%20%20%20%20%20%3Cuse%20href%3D%22%23lg-ch%22%20transform%3D%22rotate%2890%29%22/%3E%0A%20%20%20%20%20%20%3Cuse%20href%3D%22%23lg-ch%22%20transform%3D%22rotate%28180%29%22/%3E%0A%20%20%20%20%20%20%3Cuse%20href%3D%22%23lg-ch%22%20transform%3D%22rotate%28270%29%22/%3E%0A%20%20%20%20%20%20%3Ccircle%20r%3D%2252%22%20fill%3D%22%23C29A45%22/%3E%0A%20%20%20%20%20%20%3Ccircle%20r%3D%2246%22%20fill%3D%22none%22%20stroke%3D%22%239C772B%22%20stroke-width%3D%222%22/%3E%0A%20%20%20%20%20%20%3Ccircle%20r%3D%2236%22%20fill%3D%22%23F4F2EA%22/%3E%0A%20%20%20%20%20%20%3Ccircle%20r%3D%2226%22%20fill%3D%22none%22%20stroke%3D%22%23D6D2C4%22%20stroke-width%3D%222.5%22/%3E%0A%20%20%20%20%20%20%3Ccircle%20r%3D%227%22%20fill%3D%22%23C29A45%22/%3E%0A%20%20%20%20%3C/g%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Instrument+Sans:wght@400..700&display=swap" rel="stylesheet">
@@ -121,7 +122,7 @@ h3{font-size:1.5rem;line-height:1.2}
 /* header */
 .head-row{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:18px}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:600 1.3rem/1 var(--font-display);letter-spacing:-.01em}
-.brand svg{width:30px;height:30px;flex:none}
+.brand svg{width:46px;height:46px;flex:none}
 .nav{display:flex;gap:28px;font-size:.95rem;font-weight:500}
 .nav a{text-decoration:none;color:var(--muted)}
 .nav a:hover{color:var(--ink)}
@@ -160,10 +161,12 @@ h3{font-size:1.5rem;line-height:1.2}
 .sec-lede{color:var(--muted);max-width:52ch}
 
 /* rentals */
-.layers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(28px,4vw,56px)}
+.layers{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(28px,3vw,44px)}
 .layers li{display:flex;flex-direction:column;gap:14px;min-width:0}
 .motif{width:96px;height:96px;flex:none}
-.layers p{color:var(--muted);max-width:30ch}
+.spec{display:flex;flex-direction:column;font-weight:500}
+.spec li{padding:9px 0;border-top:1px solid var(--line)}
+.spec li:last-child{border-bottom:1px solid var(--line)}
 
 /* reviews */
 .reviews-grid{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,2fr);gap:clamp(32px,6vw,88px);align-items:start}
@@ -203,7 +206,7 @@ h3{font-size:1.5rem;line-height:1.2}
 .field{display:flex;flex-direction:column;gap:7px;min-width:0;border:0;padding:0;margin:0}
 .field label,.field legend{font-size:.88rem;font-weight:600;padding:0}
 .field-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
-.tool input[type="text"],.tool input[type="date"],.tool input[type="number"],.tool textarea{
+.tool input[type="text"],.tool input[type="tel"],.tool input[type="email"],.tool input[type="date"],.tool input[type="number"],.tool textarea{
   width:100%;min-height:46px;padding:10px 12px;
   font:400 16px/1.5 var(--font-body);color:var(--on-cloth);
   background:var(--field-bg);border:1px solid var(--field-edge);border-radius:2px;
@@ -213,7 +216,10 @@ h3{font-size:1.5rem;line-height:1.2}
 .checks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px 16px}
 .checks label{display:flex;align-items:center;gap:10px;min-height:44px;font-weight:400;font-size:1rem;cursor:pointer}
 .checks input{width:18px;height:18px;accent-color:var(--brass);flex:none}
-#f-out{background:rgba(0,0,0,.22);line-height:1.55}
+.tool{position:relative}
+.status.is-error{color:#FFB4A8}
+.status.is-ok{color:#CFE8C9}
+button[disabled]{opacity:.65;cursor:wait}
 .out-actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px}
 .status{font-size:.9rem;color:var(--on-cloth-muted);min-width:0}
 .hint{font-size:.9rem;color:var(--on-cloth-muted)}
@@ -232,7 +238,11 @@ h3{font-size:1.5rem;line-height:1.2}
 }
 .find-body .btn{align-self:flex-start}
 
-footer{padding-block:28px;border-top:1px solid var(--line);font-size:.9rem;color:var(--muted)}
+footer{padding-block:32px;border-top:1px solid var(--line);font-size:.9rem;color:var(--muted)}
+.foot-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px 32px}
+.foot-logo{width:min(100%,320px);height:auto;flex:none}
+.lg-main{fill:var(--ink)}
+.lg-sub{fill:var(--muted)}
 
 @media (max-width:900px){
   .hero-grid,.reviews-grid,.plan-grid,.find-grid{grid-template-columns:minmax(0,1fr)}
@@ -240,6 +250,7 @@ footer{padding-block:28px;border-top:1px solid var(--line);font-size:.9rem;color
   .rating{flex-direction:row;flex-wrap:wrap;align-items:center;gap:6px 18px}
   .rating .eyebrow{flex-basis:100%}
 }
+@media (max-width:1000px){.layers{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:820px){.nav{display:none}}
 @media (max-width:760px){
   .layers{grid-template-columns:minmax(0,1fr)}
@@ -256,16 +267,36 @@ footer{padding-block:28px;border-top:1px solid var(--line);font-size:.9rem;color
   *{transition:none!important}
 }
 </style>
+
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
   <symbol id="star" viewBox="0 0 20 20"><polygon points="10,1.5 12.6,7.2 18.8,7.8 14.1,12 15.5,18.1 10,15 4.5,18.1 5.9,12 1.2,7.8 7.4,7.2"/></symbol>
+  <defs>
+    <g id="lg-emblem-g">
+      <circle r="150" fill="#C29A45"/>
+      <circle r="141" fill="none" stroke="#9C772B" stroke-width="2"/>
+      <circle r="132" fill="#1F3B31"/>
+      <g id="lg-ch">
+        <rect x="-25" y="-118" width="50" height="9" rx="4.5" fill="#9C772B"/>
+        <rect x="-22" y="-105" width="44" height="38" rx="11" fill="#C29A45"/>
+      </g>
+      <use href="#lg-ch" transform="rotate(90)"/>
+      <use href="#lg-ch" transform="rotate(180)"/>
+      <use href="#lg-ch" transform="rotate(270)"/>
+      <circle r="52" fill="#C29A45"/>
+      <circle r="46" fill="none" stroke="#9C772B" stroke-width="2"/>
+      <circle r="36" fill="#F4F2EA"/>
+      <circle r="26" fill="none" stroke="#D6D2C4" stroke-width="2.5"/>
+      <circle r="7" fill="#C29A45"/>
+    </g>
+  </defs>
 </svg>
 
 <header>
   <div class="wrap head-row">
     <a class="brand" href="#top" aria-label="Secured Rentals, back to top">
-      <svg viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="15" r="14" class="c-brass"/><circle cx="15" cy="15" r="11.5" class="s-brass-deep" stroke-width="1"/><circle cx="15" cy="15" r="8" class="c-plate"/></svg>
+      <svg viewBox="-150 -150 300 300" aria-hidden="true"><use href="#lg-emblem-g"/></svg>
       <span>Secured Rentals</span>
     </a>
     <nav class="nav" aria-label="Sections">
@@ -282,9 +313,9 @@ footer{padding-block:28px;border-top:1px solid var(--line);font-size:.9rem;color
   <section class="hero">
     <div class="wrap hero-grid">
       <div class="hero-copy">
-        <p class="eyebrow">Party &amp; event rentals · Clarence-Rockland, Ontario</p>
-        <h1>Beautiful tables, <em>delivered on time.</em></h1>
-        <p class="lede">Charger plates, dinnerware and glassware for weddings and events. We deliver them clean and on schedule, then collect them after your event.</p>
+        <p class="eyebrow">Table &amp; chair rentals · Clarence-Rockland, Ontario</p>
+        <h1>Tables and chairs, <em>delivered on time.</em></h1>
+        <p class="lede">Tables and chairs for weddings and events, with charger plates, dinnerware and glassware to set them. We deliver on schedule and collect after your event.</p>
         <div class="cta-row">
           <a class="btn btn-primary" href="#plan">Plan your rental</a>
           <a class="btn btn-ghost" href="tel:+12269781275">Call (226) 978-1275</a>
@@ -298,7 +329,7 @@ footer{padding-block:28px;border-top:1px solid var(--line);font-size:.9rem;color
       </div>
 
       <figure class="table-fig">
-        <svg viewBox="0 0 520 520" role="img" aria-label="A round banquet table seen from above, set for six with charger plates, dinner plates and glasses">
+        <svg viewBox="0 0 520 520" role="img" aria-label="A round banquet table seen from above, set for six with a chair at each place">
           <defs>
             <g id="setting">
               <circle cx="260" cy="118" r="52" class="c-brass"/>
@@ -309,22 +340,35 @@ footer{padding-block:28px;border-top:1px solid var(--line);font-size:.9rem;color
               <circle cx="320" cy="80" r="8" class="s-glass" stroke-width="1"/>
               <circle cx="315" cy="75" r="3" class="c-glass-hi"/>
             </g>
+            <g id="chair">
+              <rect x="226" y="20" width="68" height="13" rx="6.5" class="c-brass-deep"/>
+              <rect x="230" y="36" width="60" height="50" rx="13" class="c-brass"/>
+              <rect x="230" y="36" width="60" height="50" rx="13" class="s-brass-deep" stroke-width="1.5"/>
+            </g>
           </defs>
-          <circle cx="260" cy="272" r="244" class="c-shadow"/>
-          <circle cx="260" cy="260" r="244" class="c-cloth"/>
-          <circle cx="260" cy="260" r="234" class="s-cloth-edge" stroke-width="1.5"/>
-          <use href="#setting"/>
-          <use href="#setting" transform="rotate(60 260 260)"/>
-          <use href="#setting" transform="rotate(120 260 260)"/>
-          <use href="#setting" transform="rotate(180 260 260)"/>
-          <use href="#setting" transform="rotate(240 260 260)"/>
-          <use href="#setting" transform="rotate(300 260 260)"/>
-          <circle cx="260" cy="260" r="42" class="s-brass-deep" stroke-width="1.5" style="stroke:var(--brass)"/>
-          <circle cx="260" cy="260" r="24" class="c-brass"/>
-          <circle cx="260" cy="260" r="13" class="c-plate"/>
-          <circle cx="260" cy="260" r="4" class="c-brass-deep"/>
+          <use href="#chair"/>
+          <use href="#chair" transform="rotate(60 260 260)"/>
+          <use href="#chair" transform="rotate(120 260 260)"/>
+          <use href="#chair" transform="rotate(180 260 260)"/>
+          <use href="#chair" transform="rotate(240 260 260)"/>
+          <use href="#chair" transform="rotate(300 260 260)"/>
+          <g transform="translate(260 260) scale(.7) translate(-260 -260)">
+            <circle cx="260" cy="272" r="244" class="c-shadow"/>
+            <circle cx="260" cy="260" r="244" class="c-cloth"/>
+            <circle cx="260" cy="260" r="234" class="s-cloth-edge" stroke-width="1.5"/>
+            <use href="#setting"/>
+            <use href="#setting" transform="rotate(60 260 260)"/>
+            <use href="#setting" transform="rotate(120 260 260)"/>
+            <use href="#setting" transform="rotate(180 260 260)"/>
+            <use href="#setting" transform="rotate(240 260 260)"/>
+            <use href="#setting" transform="rotate(300 260 260)"/>
+            <circle cx="260" cy="260" r="42" class="s-brass-deep" stroke-width="1.5" style="stroke:var(--brass)"/>
+            <circle cx="260" cy="260" r="24" class="c-brass"/>
+            <circle cx="260" cy="260" r="13" class="c-plate"/>
+            <circle cx="260" cy="260" r="4" class="c-brass-deep"/>
+          </g>
         </svg>
-        <figcaption>A round table for six, seen from above.</figcaption>
+        <figcaption>A round table for six, with chairs, seen from above.</figcaption>
       </figure>
     </div>
   </section>
@@ -333,38 +377,63 @@ footer{padding-block:28px;border-top:1px solid var(--line);font-size:.9rem;color
     <div class="wrap">
       <div class="sec-head">
         <p class="eyebrow">Rentals</p>
-        <h2>What goes on your table</h2>
-        <p class="sec-lede">These are the items customers have rented for weddings and events. If you need something else, call and ask.</p>
+        <h2>What we rent</h2>
+        <p class="sec-lede">Tables and chairs are the core of what we rent, for adults and for kids. Charger plates, dinnerware and glassware are available to set them. Call for availability and prices.</p>
       </div>
       <ul class="layers">
         <li>
           <svg class="motif" viewBox="0 0 96 96" aria-hidden="true">
             <circle cx="48" cy="48" r="48" class="c-cloth"/>
+            <rect x="12" y="30" width="72" height="36" rx="4" class="c-brass"/>
+            <rect x="17" y="35" width="62" height="26" rx="2" class="s-brass-deep" stroke-width="1.5"/>
+          </svg>
+          <h3>Tables</h3>
+          <ul class="spec">
+            <li>6 ft tables</li>
+            <li>4 ft tables</li>
+          </ul>
+        </li>
+        <li>
+          <svg class="motif" viewBox="0 0 96 96" aria-hidden="true">
+            <circle cx="48" cy="48" r="48" class="c-cloth"/>
+            <rect x="25" y="18" width="46" height="10" rx="5" class="c-brass-deep"/>
+            <rect x="27" y="31" width="42" height="40" rx="10" class="c-brass"/>
+            <rect x="27" y="31" width="42" height="40" rx="10" class="s-brass-deep" stroke-width="1.5"/>
+          </svg>
+          <h3>Adult chairs</h3>
+          <ul class="spec">
+            <li>Resin chairs</li>
+            <li>Chiavari chairs</li>
+            <li>Folding chairs</li>
+          </ul>
+        </li>
+        <li>
+          <svg class="motif" viewBox="0 0 96 96" aria-hidden="true">
+            <circle cx="48" cy="48" r="48" class="c-cloth"/>
+            <rect x="29" y="26" width="38" height="9" rx="4.5" class="c-brass-deep"/>
+            <rect x="31" y="38" width="34" height="30" rx="9" class="c-brass"/>
+            <rect x="31" y="38" width="34" height="30" rx="9" class="s-brass-deep" stroke-width="1.5"/>
+          </svg>
+          <h3>Kids’ chairs</h3>
+          <ul class="spec">
+            <li>White Chiavari chair</li>
+            <li>Pink bow chair</li>
+          </ul>
+        </li>
+        <li>
+          <svg class="motif" viewBox="0 0 96 96" aria-hidden="true">
+            <circle cx="48" cy="48" r="48" class="c-cloth"/>
             <circle cx="48" cy="48" r="34" class="c-brass"/>
             <circle cx="48" cy="48" r="29" class="s-brass-deep" stroke-width="1.5"/>
-            <circle cx="48" cy="48" r="21" class="s-brass-deep" stroke-width="1"/>
+            <circle cx="48" cy="48" r="22" class="c-plate"/>
+            <circle cx="48" cy="48" r="15" class="s-plate-shade" stroke-width="2"/>
           </svg>
-          <h3>Charger plates</h3>
-          <p>The decorative base under each dinner plate. Customers describe them as beautiful.</p>
-        </li>
-        <li>
-          <svg class="motif" viewBox="0 0 96 96" aria-hidden="true">
-            <circle cx="48" cy="48" r="48" class="c-cloth"/>
-            <circle cx="48" cy="48" r="34" class="c-plate"/>
-            <circle cx="48" cy="48" r="24" class="s-plate-shade" stroke-width="2"/>
-          </svg>
-          <h3>Dinnerware</h3>
-          <p>Plates for the meal. Reviewers note that everything arrives clean.</p>
-        </li>
-        <li>
-          <svg class="motif" viewBox="0 0 96 96" aria-hidden="true">
-            <circle cx="48" cy="48" r="48" class="c-cloth"/>
-            <circle cx="48" cy="48" r="26" class="c-glass" stroke-width="2"/>
-            <circle cx="48" cy="48" r="17" class="s-glass" stroke-width="1.2"/>
-            <circle cx="40" cy="40" r="4" class="c-glass-hi"/>
-          </svg>
-          <h3>Glassware</h3>
-          <p>Glasses for every seat at the table, delivered with the rest of your order.</p>
+          <h3>Table settings</h3>
+          <ul class="spec">
+            <li>Charger plates</li>
+            <li>Dinnerware</li>
+            <li>Glassware</li>
+          </ul>
         </li>
       </ul>
     </div>
@@ -405,8 +474,8 @@ footer{padding-block:28px;border-top:1px solid var(--line);font-size:.9rem;color
         <p class="eyebrow">Plan your rental</p>
         <h2>Tell us about your event</h2>
         <ol class="steps">
-          <li><strong>Send your date and items</strong><span>Fill in the form, then send the message to (226) 978-1275 or call.</span></li>
-          <li><strong>Agree a delivery time</strong><span>We confirm what you need and when it should arrive.</span></li>
+          <li><strong>Send your date and items</strong><span>Send your request with the form, or call (226) 978-1275.</span></li>
+          <li><strong>We confirm with you</strong><span>We reply to confirm availability, price and delivery time.</span></li>
           <li><strong>We deliver and collect</strong><span>Your rentals arrive on schedule and we pick them up after the event.</span></li>
         </ol>
       </div>
@@ -414,8 +483,19 @@ footer{padding-block:28px;border-top:1px solid var(--line);font-size:.9rem;color
       <form class="tool" id="req" autocomplete="off" novalidate>
         <div class="field">
           <label for="f-name">Your name</label>
-          <input id="f-name" type="text" placeholder="First and last name">
+          <input id="f-name" type="text" placeholder="First and last name" required>
         </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="f-phone">Phone</label>
+            <input id="f-phone" type="tel" inputmode="tel" placeholder="(613) 555-0123">
+          </div>
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input id="f-email" type="email" inputmode="email" placeholder="you@example.com">
+          </div>
+        </div>
+        <p class="hint">Give a phone number or an email so we can reply.</p>
         <div class="field-row">
           <div class="field">
             <label for="f-date">Event date</label>
@@ -429,25 +509,29 @@ footer{padding-block:28px;border-top:1px solid var(--line);font-size:.9rem;color
         <fieldset class="field">
           <legend>What do you need?</legend>
           <div class="checks">
-            <label for="i-charger"><input id="i-charger" type="checkbox" name="item" value="charger plates" checked> Charger plates</label>
-            <label for="i-dinner"><input id="i-dinner" type="checkbox" name="item" value="dinnerware" checked> Dinnerware</label>
-            <label for="i-glass"><input id="i-glass" type="checkbox" name="item" value="glassware" checked> Glassware</label>
+            <label for="i-t6"><input id="i-t6" type="checkbox" name="item" value="6 ft tables"> 6 ft tables</label>
+            <label for="i-t4"><input id="i-t4" type="checkbox" name="item" value="4 ft tables"> 4 ft tables</label>
+            <label for="i-resin"><input id="i-resin" type="checkbox" name="item" value="resin chairs"> Resin chairs</label>
+            <label for="i-chiavari"><input id="i-chiavari" type="checkbox" name="item" value="Chiavari chairs"> Chiavari chairs</label>
+            <label for="i-folding"><input id="i-folding" type="checkbox" name="item" value="folding chairs"> Folding chairs</label>
+            <label for="i-kidwhite"><input id="i-kidwhite" type="checkbox" name="item" value="kids’ white Chiavari chairs"> Kids’ white Chiavari chair</label>
+            <label for="i-kidpink"><input id="i-kidpink" type="checkbox" name="item" value="kids’ pink bow chairs"> Kids’ pink bow chair</label>
+            <label for="i-charger"><input id="i-charger" type="checkbox" name="item" value="charger plates"> Charger plates</label>
+            <label for="i-dinner"><input id="i-dinner" type="checkbox" name="item" value="dinnerware"> Dinnerware</label>
+            <label for="i-glass"><input id="i-glass" type="checkbox" name="item" value="glassware"> Glassware</label>
             <label for="i-other"><input id="i-other" type="checkbox" name="item" value="other items"> Something else</label>
           </div>
         </fieldset>
         <div class="field">
           <label for="f-notes">Anything else</label>
-          <textarea id="f-notes" rows="3" placeholder="Venue, delivery time, other items"></textarea>
+          <textarea id="f-notes" rows="3" placeholder="How many of each item, venue, delivery time"></textarea>
         </div>
-        <div class="field">
-          <label for="f-out">Your message</label>
-          <textarea id="f-out" rows="9" readonly></textarea>
-        </div>
+        <input type="checkbox" id="f-bot" name="botcheck" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" aria-hidden="true">
         <div class="out-actions">
-          <button type="button" class="btn btn-brass" id="copy-msg">Copy message</button>
+          <button type="submit" class="btn btn-brass" id="send-btn">Send request</button>
           <span class="status" id="msg-status" role="status" aria-live="polite"></span>
         </div>
-        <p class="hint">Copy this message and send it to (226) 978-1275, or call to talk it through.</p>
+        <p class="hint">This is a request, not a confirmed booking. We reply to confirm availability and delivery.</p>
       </form>
     </div>
   </section>
@@ -484,13 +568,27 @@ footer{padding-block:28px;border-top:1px solid var(--line);font-size:.9rem;color
 </main>
 
 <footer>
-  <div class="wrap">© 2026 Secured Rentals · Clarence-Rockland, Ontario</div>
+  <div class="wrap foot-row">
+    <svg class="foot-logo" viewBox="0 0 1160 360" role="img" aria-label="Secured Rentals: tables, chairs, event rentals">
+      <use href="#lg-emblem-g" transform="translate(180 180)"/>
+      <path class="lg-main" d="M415.1 172.6Q415.1 167.3 411.3 163.1Q407.6 158.9 402.2 156Q396.9 153 391.6 149.9Q386.2 146.7 382.5 141.8Q378.7 136.9 378.7 130.4Q378.7 121.8 384.6 116.4Q390.5 110.9 398.4 110.9Q403.2 110.9 408.8 112.9Q414.4 114.8 415.5 114.8Q418.5 114.8 419.2 110.9H421.6L424.1 135.2H421.2Q418.5 125.2 412.9 120.4Q407.2 115.6 400.4 115.6Q395.1 115.6 391.8 118.6Q388.5 121.5 388.5 126.2Q388.5 130.8 392.4 134.9Q396.3 139 405.3 144Q416.6 150 421.6 155.9Q426.6 161.8 426.6 168.8Q426.6 177.6 419.9 183.6Q413.2 189.6 403.4 189.6Q397.6 189.6 391.8 187.7Q385.9 185.7 384.5 185.7Q383.3 185.7 382.4 186.8Q381.5 187.9 381.3 189.5H378.8L375.4 165.3H378Q382.3 175.7 387.8 180.6Q393.4 185.5 401.1 185.5Q407.3 185.5 411.2 181.9Q415.1 178.3 415.1 172.6Z M443.4 156.4Q443.6 163.6 445.3 168.8Q447 174 449.7 176.5Q452.5 179.1 455.3 180.2Q458.1 181.3 461.1 181.3Q466.6 181.3 470.7 178.5Q474.7 175.8 478.8 169.3L480.6 170.1Q477.1 179.3 470.8 184.2Q464.6 189.1 456.5 189.1Q446.7 189.1 440.9 182.2Q435.2 175.3 435.2 163.6Q435.2 150.9 441.8 143.3Q448.5 135.6 459 135.6Q467.6 135.6 472.4 140.7Q477.2 145.9 478.5 156.4ZM443.6 152.8H466.8Q465.7 145.4 463.3 142.5Q460.9 139.7 455.7 139.7Q445.4 139.7 443.6 152.8Z M485.8 163.7Q485.8 151.1 493.2 143.3Q500.7 135.6 510.7 135.6Q517.9 135.6 523.1 139Q528.3 142.5 528.3 147.3Q528.3 149.2 526.7 150.7Q525.1 152.1 522.8 152.1Q518.9 152.1 517.5 146.8L516.8 144.3Q515.9 141.1 514.5 140Q513.1 138.9 510.1 138.9Q503.1 138.9 498.8 144.4Q494.6 149.9 494.6 158.7Q494.6 168.5 499.5 174.7Q504.5 180.9 512.2 180.9Q517.1 180.9 520.7 178.6Q524.2 176.3 528.3 170.2L529.9 171.2Q528.8 173.5 527.9 175Q527 176.5 524.8 179.4Q522.6 182.4 520.4 184.2Q518.3 186.1 514.7 187.6Q511.2 189.1 507.4 189.1Q498 189.1 491.9 182Q485.8 174.9 485.8 163.7Z M588.3 182.3V183.9Q579.4 186.3 572.6 189L572.2 188.8V179.3Q571.8 179.7 570.2 181.4Q568.5 183.1 567.9 183.7Q567.2 184.4 565.5 185.7Q563.9 187 562.6 187.5Q561.4 188.1 559.4 188.6Q557.5 189.1 555.5 189.1Q549.3 189.1 545.5 185.1Q541.7 181 541.7 174.3V145.6Q541.7 141.6 540.3 140.1Q538.8 138.5 534.7 138.3V136.7H551.3V173.9Q551.3 177.4 553.7 180Q556.1 182.5 559.4 182.5Q560.7 182.5 562.4 182.2Q564.1 181.8 566.3 180.9Q568.5 179.9 570.1 177.8Q571.6 175.7 571.6 172.6V145.8Q571.6 141.6 570.1 140.2Q568.5 138.9 563.2 138.6V136.7H581.2V175.8Q581.2 179.8 582.4 181Q583.7 182.3 587.7 182.3Z M623.7 146.7Q622 146.7 619.5 144.7Q617 142.7 616.2 142.7Q613.9 142.7 611.1 146Q608.2 149.4 608.2 152.1V177.7Q608.2 182.6 610.1 184.4Q612.1 186.1 617.9 186.3V188H590.5V186.3Q596 185.3 597.3 184Q598.6 182.8 598.6 178.4V149.9Q598.6 146.2 597.8 144.6Q596.9 143.1 594.8 143.1Q592.9 143.1 590.8 143.5V141.7Q599.9 138.8 607.6 135.6L608.2 135.8V146.3Q612.4 140.2 615.4 137.9Q618.4 135.6 621.9 135.6Q624.9 135.6 626.5 137.2Q628.2 138.8 628.2 141.6Q628.2 144 627 145.4Q625.8 146.7 623.7 146.7Z M639.8 156.4Q640 163.6 641.7 168.8Q643.4 174 646.2 176.5Q648.9 179.1 651.7 180.2Q654.5 181.3 657.6 181.3Q663 181.3 667.1 178.5Q671.1 175.8 675.2 169.3L677.1 170.1Q673.5 179.3 667.3 184.2Q661 189.1 652.9 189.1Q643.1 189.1 637.3 182.2Q631.6 175.3 631.6 163.6Q631.6 150.9 638.2 143.3Q644.9 135.6 655.4 135.6Q664.1 135.6 668.9 140.7Q673.6 145.9 674.9 156.4ZM640 152.8H663.3Q662.1 145.4 659.7 142.5Q657.3 139.7 652.1 139.7Q641.8 139.7 640 152.8Z M718.3 189.1 717.9 188.8V181.5Q712.4 189.1 703.3 189.1Q693.8 189.1 688 182.4Q682.2 175.6 682.2 164.6Q682.2 152.5 689.1 144.1Q696.1 135.6 705.9 135.6Q712.1 135.6 717.9 140.5V122.7Q717.9 119.1 716.9 118Q715.8 116.9 712.6 116.9Q711 116.9 710.1 117V115.2Q720.5 112.4 726.9 110.1L727.5 110.4V175Q727.5 179 728.4 180.2Q729.4 181.5 732.5 181.5Q733 181.5 735.1 181.4V183.2ZM707.7 183.2Q712.1 183.2 715 180.8Q717.9 178.3 717.9 176.4V150.2Q717.9 145.6 714.3 142.2Q710.8 138.8 706.2 138.8Q699.8 138.8 695.9 144.6Q692 150.4 692 160.1Q692 170.6 696.3 176.9Q700.7 183.2 707.7 183.2Z M797.9 112.5Q802.8 112.5 807.3 113.3Q811.7 114.1 816.4 116.1Q821.2 118.1 824 122.3Q826.9 126.6 826.9 132.6Q826.9 147.8 806.8 151.5Q806.5 151.6 806.2 151.6L829.7 180.5Q832.1 183.3 834.2 184.5Q836.3 185.6 839.6 185.8V188H821.3L794.1 152.9L787.8 153.1V175.6Q787.8 181.7 789.6 183.6Q791.4 185.4 798 185.8V188H766.4V185.8Q772.8 185.4 774.5 183.4Q776.1 181.4 776.1 174.3V125Q776.1 118.9 774.5 117.1Q772.8 115.4 766.4 114.7V112.5ZM787.8 148.9Q801.6 148.7 808 145.2Q814.4 141.8 814.4 132.4Q814.4 124.4 809.4 120.6Q804.3 116.8 793.6 116.8Q790.2 116.8 789 117.6Q787.8 118.5 787.8 120.9Z M851.8 156.4Q852.1 163.6 853.8 168.8Q855.5 174 858.2 176.5Q860.9 179.1 863.7 180.2Q866.5 181.3 869.6 181.3Q875.1 181.3 879.1 178.5Q883.2 175.8 887.3 169.3L889.1 170.1Q885.6 179.3 879.3 184.2Q873 189.1 864.9 189.1Q855.1 189.1 849.4 182.2Q843.6 175.3 843.6 163.6Q843.6 150.9 850.3 143.3Q857 135.6 867.4 135.6Q876.1 135.6 880.9 140.7Q885.7 145.9 886.9 156.4ZM852.1 152.8H875.3Q874.2 145.4 871.8 142.5Q869.4 139.7 864.1 139.7Q853.9 139.7 852.1 152.8Z M892.5 142.6V140.7Q901 138.2 908.3 135.6L909.1 135.8V144.8Q914.9 139.3 918.2 137.4Q921.6 135.6 925.6 135.6Q931.9 135.6 935.4 140.1Q939 144.6 939 152.7V178.8Q939 183 940.4 184.4Q941.8 185.8 946 186.3V188H922.3V186.3Q926.6 185.9 928 184Q929.5 182.1 929.5 176.7V152.9Q929.5 141.8 921.1 141.8Q918.3 141.8 915.9 143.1Q913.5 144.5 909.4 148.3V180.4Q909.4 183.4 911 184.7Q912.6 185.9 916.9 186.3V188H892.8V186.3Q897.1 185.9 898.5 184.3Q899.8 182.6 899.8 177.7V149.5Q899.8 145.2 898.9 143.7Q898 142.2 895.6 142.2Q893.4 142.2 892.5 142.6Z M976.7 136.7V140.3H965.1V173Q965.1 178.3 966.5 180.8Q967.9 183.2 971.1 183.2Q974.6 183.2 977.9 179.2L979.4 180.5Q973.9 189.1 965.7 189.1Q955.6 189.1 955.6 174.7V140.3H949.5Q949.1 140 949.1 139.6Q949.1 139 949.4 138.6Q949.8 138.3 950.7 137.7Q951.7 137 953.1 136Q954.4 134.9 956.8 132Q959.2 129.2 962.1 125.2Q963.9 122.6 964.3 122Q965.1 122 965.1 123.5V136.7Z M982.2 176.9Q982.2 174.9 982.7 173.1Q983.2 171.4 984.3 169.8Q985.4 168.3 986.5 167Q987.5 165.8 989.5 164.5Q991.6 163.1 993 162.3Q994.3 161.4 997.1 160.2Q999.9 159 1001.4 158.4Q1002.9 157.8 1006.1 156.5Q1009.3 155.3 1010.7 154.7V147.8Q1010.7 138.3 1002.1 138.3Q998.7 138.3 996.3 139.9Q993.9 141.6 993.9 143.9Q993.9 144.8 994.2 146.4Q994.4 148 994.4 148.4Q994.4 150.4 992.9 151.8Q991.4 153.2 989.3 153.2Q987.4 153.2 985.9 151.7Q984.4 150.3 984.4 148.3Q984.4 143 989.9 139.3Q995.5 135.6 1003.6 135.6Q1012.9 135.6 1016.4 140.1Q1020 144.6 1020 153.8V176Q1020 179.8 1020.7 181.2Q1021.5 182.6 1023.4 182.6Q1025.8 182.6 1028.4 180.5V183.4Q1025.4 186.7 1023.2 187.9Q1021 189.1 1018.2 189.1Q1014.6 189.1 1013 187.2Q1011.3 185.3 1010.9 180.8Q1001.1 189.1 994.2 189.1Q989 189.1 985.6 185.7Q982.2 182.3 982.2 176.9ZM1010.7 174V157.4Q1000.5 161.2 996.4 164.7Q992.3 168.3 992.3 173.3Q992.3 178 994.6 180.2Q996.8 182.5 999.5 182.5Q1003.3 182.5 1007.8 179.9Q1009.6 178.9 1010.2 177.7Q1010.7 176.6 1010.7 174Z M1030.1 117V115.2Q1041.4 112.4 1048.2 110.1L1048.7 110.4V178.4Q1048.7 183.1 1050.2 184.5Q1051.8 185.9 1057.3 186.3V188H1030.3V186.3Q1035.7 185.8 1037.4 184.2Q1039.1 182.6 1039.1 178.1V123.7Q1039.1 119.7 1038.1 118.2Q1037.1 116.8 1034.3 116.8Q1032.1 116.8 1030.1 117Z M1088.9 137.8Q1089.1 137.8 1090.8 136.7H1092L1092.5 152.2H1090.8Q1088.8 144.6 1086 141.3Q1083.1 138.1 1078.2 138.1Q1074.4 138.1 1071.9 140.3Q1069.5 142.5 1069.5 145.9Q1069.5 150.8 1074.4 153.7L1086.7 161Q1091.8 164.1 1094 167.2Q1096.2 170.3 1096.2 174.5Q1096.2 180.5 1091.5 184.8Q1086.8 189.1 1080.2 189.1Q1077.3 189.1 1072.5 188.1Q1067.7 187.1 1066.6 187.1Q1064.9 187.1 1064 188.5H1062.5V170.7H1064.3Q1066.1 178.7 1068.7 182Q1072.3 186.6 1078.8 186.6Q1083.1 186.6 1085.7 184.4Q1088.3 182.2 1088.3 178.4Q1088.3 173.3 1082.3 169.9L1075.7 166.1Q1068.4 162 1065.4 158.2Q1062.4 154.5 1062.4 149.7Q1062.4 143.5 1066.8 139.6Q1071.2 135.6 1077.9 135.6Q1081.7 135.6 1085 136.7Q1088.3 137.8 1088.9 137.8Z"/>
+      <rect x="376" y="212" width="300" height="3" fill="#C29A45"/>
+      <path class="lg-sub" d="M377.2 232.1H383.7V250H387.5V232.1H394V228.9H377.2Z M401.1 250H405.2L406.9 244.8H414.8L416.6 250H420.7L413.2 228.9H408.4ZM407.9 241.7 408.8 239C409.4 237.2 410 234.8 410.8 231.8C411.6 234.8 412.2 237.1 412.8 239L413.8 241.7Z M428.8 250H437.3C442.1 250 444.5 247.5 444.5 244.3C444.5 241.1 442.2 239.2 440 239.1V238.9C442 238.4 443.6 236.9 443.6 234.4C443.6 231.3 441.4 228.9 436.8 228.9H428.8ZM432.5 246.8V240.6H436.8C439.2 240.6 440.6 242.1 440.6 244C440.6 245.6 439.5 246.8 436.7 246.8ZM432.5 237.9V232H436.4C438.7 232 439.9 233.2 439.9 234.9C439.9 236.7 438.4 237.9 436.4 237.9Z M453.1 250H466.2V246.8H456.9V228.9H453.1Z M474.7 250H488.4V246.8H478.5V240.9H487.7V237.8H478.5V232.1H488.4V228.9H474.7Z M504.8 250.3C509.9 250.3 512.8 247.8 512.8 244.1C512.8 240.4 509.8 238.8 506.6 238L504.7 237.5C502.9 237.1 501.1 236.4 501.1 234.6C501.1 233 502.5 231.8 504.9 231.8C507.2 231.8 508.7 232.9 508.9 234.7H512.5C512.4 231.2 509.4 228.6 504.9 228.6C500.5 228.6 497.2 231.1 497.2 234.8C497.2 237.8 499.3 239.6 502.8 240.5L505.2 241.1C507.5 241.7 509.1 242.4 509.1 244.1C509.1 245.9 507.3 247.1 504.8 247.1C502.4 247.1 500.6 246 500.4 243.8H496.7C496.8 248 499.9 250.3 504.8 250.3Z M549 242.3C550.3 242.3 551.3 241.3 551.3 240C551.3 238.7 550.3 237.7 549 237.7C547.7 237.7 546.7 238.7 546.7 240C546.7 241.3 547.7 242.3 549 242.3Z M595 250.3C599.9 250.3 603.3 247 603.9 243H600C599.6 245.5 597.5 246.9 595 246.9C591.6 246.9 589.1 244.3 589.1 239.5C589.1 234.7 591.6 232 595 232C597.5 232 599.6 233.4 600 235.9H603.9C603.2 231.3 599.6 228.6 595 228.6C589.5 228.6 585.3 232.6 585.3 239.5C585.3 246.3 589.4 250.3 595 250.3Z M612.5 250H616.3V240.8H626.1V250H629.9V228.9H626.1V237.6H616.3V228.9H612.5Z M637.9 250H642.1L643.8 244.8H651.7L653.5 250H657.6L650.1 228.9H645.3ZM644.8 241.7 645.7 239C646.3 237.2 646.9 234.8 647.7 231.8C648.5 234.8 649.1 237.1 649.7 239L650.7 241.7Z M669.4 228.9H665.7V250H669.4Z M678.9 250H682.7V242.3H686.6L690.8 250H695L690.4 241.6C692.9 240.6 694.2 238.5 694.2 235.7C694.2 231.6 691.6 228.9 686.8 228.9H678.9ZM682.7 239.1V232.1H686.2C689.1 232.1 690.3 233.4 690.3 235.7C690.3 237.9 689.1 239.1 686.2 239.1Z M710.4 250.3C715.5 250.3 718.4 247.8 718.4 244.1C718.4 240.4 715.3 238.8 712.2 238L710.2 237.5C708.5 237.1 706.6 236.4 706.6 234.6C706.6 233 708.1 231.8 710.5 231.8C712.7 231.8 714.3 232.9 714.5 234.7H718.1C718 231.2 715 228.6 710.5 228.6C706.1 228.6 702.8 231.1 702.8 234.8C702.8 237.8 704.9 239.6 708.4 240.5L710.8 241.1C713.1 241.7 714.6 242.4 714.6 244.1C714.6 245.9 712.9 247.1 710.4 247.1C708 247.1 706.1 246 706 243.8H702.2C702.4 248 705.5 250.3 710.4 250.3Z M754.6 242.3C755.9 242.3 756.9 241.3 756.9 240C756.9 238.7 755.9 237.7 754.6 237.7C753.3 237.7 752.3 238.7 752.3 240C752.3 241.3 753.3 242.3 754.6 242.3Z M791.5 250H805.3V246.8H795.3V240.9H804.5V237.8H795.3V232.1H805.3V228.9H791.5Z M820.4 250H825.2L832.6 228.9H828.4L824.8 239.9C824.2 241.7 823.6 244.1 822.8 247C822 244.1 821.4 241.7 820.8 239.9L817 228.9H812.9Z M840.6 250H854.4V246.8H844.4V240.9H853.6V237.8H844.4V232.1H854.3V228.9H840.6Z M863.4 250H867.2V239.5C867.2 238.3 867.1 236.1 866.9 233.5C868.4 236.3 869.2 237.8 870.3 239.5L876.8 250H881.1V228.9H877.3V240C877.3 241.3 877.4 243.4 877.5 245.4C876.6 243.3 875.7 241.7 874.9 240.5L867.6 228.9H863.4Z M889.6 232.1H896.1V250H899.9V232.1H906.4V228.9H889.6Z M927.4 250H931.2V242.3H935.1L939.3 250H943.5L939 241.6C941.4 240.6 942.8 238.5 942.8 235.7C942.8 231.6 940.2 228.9 935.3 228.9H927.4ZM931.2 239.1V232.1H934.7C937.6 232.1 938.9 233.4 938.9 235.7C938.9 237.9 937.6 239.1 934.8 239.1Z M951.5 250H965.3V246.8H955.3V240.9H964.5V237.8H955.3V232.1H965.3V228.9H951.5Z M974.3 250H978.2V239.5C978.2 238.3 978 236.1 977.9 233.5C979.3 236.3 980.1 237.8 981.2 239.5L987.8 250H992.1V228.9H988.2V240C988.2 241.3 988.3 243.4 988.5 245.4C987.5 243.3 986.6 241.7 985.9 240.5L978.6 228.9H974.3Z M1000.6 232.1H1007.1V250H1010.9V232.1H1017.4V228.9H1000.6Z M1024.5 250H1028.6L1030.3 244.8H1038.2L1040 250H1044.2L1036.6 228.9H1031.8ZM1031.3 241.7 1032.2 239C1032.8 237.2 1033.4 234.8 1034.2 231.8C1035 234.8 1035.6 237.1 1036.2 239L1037.2 241.7Z M1052.2 250H1065.3V246.8H1055.9V228.9H1052.2Z M1081.2 250.3C1086.2 250.3 1089.2 247.8 1089.2 244.1C1089.2 240.4 1086.1 238.8 1083 238L1081 237.5C1079.3 237.1 1077.4 236.4 1077.4 234.6C1077.4 233 1078.8 231.8 1081.2 231.8C1083.5 231.8 1085 232.9 1085.2 234.7H1088.9C1088.8 231.2 1085.8 228.6 1081.3 228.6C1076.9 228.6 1073.6 231.1 1073.6 234.8C1073.6 237.8 1075.6 239.6 1079.2 240.5L1081.6 241.1C1083.8 241.7 1085.4 242.4 1085.4 244.1C1085.4 245.9 1083.6 247.1 1081.1 247.1C1078.8 247.1 1076.9 246 1076.7 243.8H1073C1073.2 248 1076.3 250.3 1081.2 250.3Z"/>
+    </svg>
+    <p>© 2026 Secured Rentals · Clarence-Rockland, Ontario</p>
+  </div>
 </footer>
 
 <script>
 (function () {
+  /* Paste your Web3Forms access key between the quotes. Get one free at web3forms.com using the email that should receive requests. */
+  var ACCESS_KEY = 'PASTE_YOUR_WEB3FORMS_KEY_HERE';
+  var ENDPOINT = 'https://api.web3forms.com/submit';
+
   var $ = function (id) { return document.getElementById(id); };
-  var out = $('f-out');
+  var form = $('req');
+  var statusEl = $('msg-status');
+  var btn = $('send-btn');
 
   function joinList(a) {
     if (a.length < 2) { return a.join(''); }
@@ -508,21 +606,9 @@ footer{padding-block:28px;border-top:1px solid var(--line);font-size:.9rem;color
     } catch (e) { return v; }
   }
 
-  function build() {
-    var items = [].slice.call(document.querySelectorAll('input[name="item"]:checked')).map(function (c) { return c.value; });
-    var name = $('f-name').value.trim();
-    var date = fmtDate($('f-date').value);
-    var guests = $('f-guests').value.trim();
-    var notes = $('f-notes').value.trim();
-
-    var parts = ["Hi Secured Rentals, I'd like to ask about renting " + (items.length ? joinList(items) : 'items') + ' for an event.'];
-    var details = [];
-    if (date) { details.push('Event date: ' + date); }
-    if (guests) { details.push('Guests: ' + guests); }
-    if (notes) { details.push('Notes: ' + notes); }
-    if (details.length) { parts.push(''); parts = parts.concat(details); }
-    parts.push('', name ? 'Thanks, ' + name : 'Thanks');
-    out.value = parts.join('\n');
+  function setStatus(text, kind) {
+    statusEl.textContent = text;
+    statusEl.className = 'status' + (kind ? ' is-' + kind : '');
   }
 
   function selectNode(node) {
@@ -535,31 +621,73 @@ footer{padding-block:28px;border-top:1px solid var(--line);font-size:.9rem;color
     } catch (e) {}
   }
 
-  function copy(text, statusEl, okText, selectFn) {
-    function fallback() {
-      selectFn();
-      statusEl.textContent = 'Selected. Use your device’s copy command.';
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    var name = $('f-name').value.trim();
+    var phone = $('f-phone').value.trim();
+    var email = $('f-email').value.trim();
+    var date = fmtDate($('f-date').value);
+    var guests = $('f-guests').value.trim();
+    var notes = $('f-notes').value.trim();
+    var items = [].slice.call(document.querySelectorAll('input[name="item"]:checked')).map(function (c) { return c.value; });
+
+    if (!name) { setStatus('Please enter your name.', 'error'); $('f-name').focus(); return; }
+    if (!phone && !email) { setStatus('Please add a phone number or an email so we can reply.', 'error'); $('f-phone').focus(); return; }
+    if (email && !$('f-email').checkValidity()) { setStatus('That email address does not look right.', 'error'); $('f-email').focus(); return; }
+    if (!items.length) { setStatus('Tick at least one item you need.', 'error'); return; }
+    if ($('f-bot').checked) { return; }
+    if (ACCESS_KEY.indexOf('PASTE_') === 0) {
+      setStatus('This form is not connected yet. Please call (226) 978-1275.', 'error');
+      return;
     }
-    try {
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(text).then(function () { statusEl.textContent = okText; }, fallback);
-      } else { fallback(); }
-    } catch (e) { fallback(); }
-  }
 
-  $('req').addEventListener('input', build);
-  $('req').addEventListener('change', build);
-  $('req').addEventListener('submit', function (e) { e.preventDefault(); });
+    var lines = [
+      'Items: ' + joinList(items),
+      'Event date: ' + (date || 'Not given'),
+      'Guests: ' + (guests || 'Not given'),
+      'Phone: ' + (phone || 'Not given'),
+      'Email: ' + (email || 'Not given')
+    ];
+    if (notes) { lines.push('', 'Notes: ' + notes); }
 
-  $('copy-msg').addEventListener('click', function () {
-    copy(out.value, $('msg-status'), 'Copied. Send it to (226) 978-1275.', function () { out.focus(); out.select(); });
+    var payload = {
+      access_key: ACCESS_KEY,
+      subject: 'New rental request from ' + name,
+      from_name: 'Secured Rentals website',
+      name: name,
+      message: lines.join('\n')
+    };
+    if (email) { payload.email = email; }
+
+    btn.disabled = true;
+    setStatus('Sending…', '');
+
+    fetch(ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(payload)
+    }).then(function (r) { return r.json(); }).then(function (data) {
+      if (data && data.success) {
+        setStatus('Thank you, ' + name + '. Your request was sent. We will reply to confirm.', 'ok');
+        form.reset();
+      } else {
+        setStatus('Your request did not send. Please try again or call (226) 978-1275.', 'error');
+      }
+    }).catch(function () {
+      setStatus('Your request did not send. Check your connection or call (226) 978-1275.', 'error');
+    }).then(function () { btn.disabled = false; });
   });
 
   $('copy-phone').addEventListener('click', function () {
-    copy('(226) 978-1275', $('phone-status'), 'Copied.', function () { selectNode($('phone-num')); });
+    var st = $('phone-status');
+    function fallback() { selectNode($('phone-num')); st.textContent = 'Selected. Use your device’s copy command.'; }
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText('(226) 978-1275').then(function () { st.textContent = 'Copied.'; }, fallback);
+      } else { fallback(); }
+    } catch (err) { fallback(); }
   });
-
-  build();
 })();
 </script>
 </body>
