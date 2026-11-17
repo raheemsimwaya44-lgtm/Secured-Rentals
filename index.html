@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Secured Rentals: 6 ft and 4 ft tables, adult and kids’ chairs, plus charger plates, dinnerware and glassware, for weddings and events in Clarence-Rockland, Ontario.">
+<meta name="description" content="Secured Rentals: 6 ft and 4 ft tables, adult and kids’ chairs, charger plates, dinnerware, glassware, cutlery and tablecloths, for weddings and events in Clarence-Rockland, Ontario.">
 <title>Secured Rentals</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%22-150%20-150%20300%20300%22%3E%3Cg%20id%3D%22lg-emblem-g%22%3E%0A%20%20%20%20%20%20%3Ccircle%20r%3D%22150%22%20fill%3D%22%23C29A45%22/%3E%0A%20%20%20%20%20%20%3Ccircle%20r%3D%22141%22%20fill%3D%22none%22%20stroke%3D%22%239C772B%22%20stroke-width%3D%222%22/%3E%0A%20%20%20%20%20%20%3Ccircle%20r%3D%22132%22%20fill%3D%22%231F3B31%22/%3E%0A%20%20%20%20%20%20%3Cg%20id%3D%22lg-ch%22%3E%0A%20%20%20%20%20%20%20%20%3Crect%20x%3D%22-25%22%20y%3D%22-118%22%20width%3D%2250%22%20height%3D%229%22%20rx%3D%224.5%22%20fill%3D%22%239C772B%22/%3E%0A%20%20%20%20%20%20%20%20%3Crect%20x%3D%22-22%22%20y%3D%22-105%22%20width%3D%2244%22%20height%3D%2238%22%20rx%3D%2211%22%20fill%3D%22%23C29A45%22/%3E%0A%20%20%20%20%20%20%3C/g%3E%0A%20%20%20%20%20%20%3Cuse%20href%3D%22%23lg-ch%22%20transform%3D%22rotate%2890%29%22/%3E%0A%20%20%20%20%20%20%3Cuse%20href%3D%22%23lg-ch%22%20transform%3D%22rotate%28180%29%22/%3E%0A%20%20%20%20%20%20%3Cuse%20href%3D%22%23lg-ch%22%20transform%3D%22rotate%28270%29%22/%3E%0A%20%20%20%20%20%20%3Ccircle%20r%3D%2252%22%20fill%3D%22%23C29A45%22/%3E%0A%20%20%20%20%20%20%3Ccircle%20r%3D%2246%22%20fill%3D%22none%22%20stroke%3D%22%239C772B%22%20stroke-width%3D%222%22/%3E%0A%20%20%20%20%20%20%3Ccircle%20r%3D%2236%22%20fill%3D%22%23F4F2EA%22/%3E%0A%20%20%20%20%20%20%3Ccircle%20r%3D%2226%22%20fill%3D%22none%22%20stroke%3D%22%23D6D2C4%22%20stroke-width%3D%222.5%22/%3E%0A%20%20%20%20%20%20%3Ccircle%20r%3D%227%22%20fill%3D%22%23C29A45%22/%3E%0A%20%20%20%20%3C/g%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -161,9 +161,17 @@ h3{font-size:1.5rem;line-height:1.2}
 .sec-lede{color:var(--muted);max-width:52ch}
 
 /* rentals */
-.layers{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(28px,3vw,44px)}
+.layers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(32px,4vw,52px) clamp(24px,3vw,40px)}
 .layers li{display:flex;flex-direction:column;gap:14px;min-width:0}
 .motif{width:96px;height:96px;flex:none}
+.photo{position:relative;display:grid;place-items:center;aspect-ratio:4/3;max-width:100%;background:var(--cloth);border-radius:2px;overflow:hidden}
+.photo .motif{width:36%;height:auto;max-width:150px}
+.layers .spec li{display:block}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.sw{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:10px;vertical-align:-1px;border:1px solid var(--line)}
+.sw-gold{background:#C9A24A}
+.sw-silver{background:#C4C8CC}
+.sw-black{background:#15191C}
 .spec{display:flex;flex-direction:column;font-weight:500}
 .spec li{padding:9px 0;border-top:1px solid var(--line)}
 .spec li:last-child{border-bottom:1px solid var(--line)}
@@ -315,7 +323,7 @@ footer{padding-block:32px;border-top:1px solid var(--line);font-size:.9rem;color
       <div class="hero-copy">
         <p class="eyebrow">Table &amp; chair rentals · Clarence-Rockland, Ontario</p>
         <h1>Tables and chairs, <em>delivered on time.</em></h1>
-        <p class="lede">Tables and chairs for weddings and events, with charger plates, dinnerware and glassware to set them. We deliver on schedule and collect after your event.</p>
+        <p class="lede">Tables and chairs for weddings and events, with charger plates, dinnerware, glassware, cutlery and tablecloths to set them. We deliver on schedule and collect after your event.</p>
         <div class="cta-row">
           <a class="btn btn-primary" href="#plan">Plan your rental</a>
           <a class="btn btn-ghost" href="tel:+12269781275">Call (226) 978-1275</a>
@@ -378,15 +386,14 @@ footer{padding-block:32px;border-top:1px solid var(--line);font-size:.9rem;color
       <div class="sec-head">
         <p class="eyebrow">Rentals</p>
         <h2>What we rent</h2>
-        <p class="sec-lede">Tables and chairs are the core of what we rent, for adults and for kids. Charger plates, dinnerware and glassware are available to set them. Call for availability and prices.</p>
+        <p class="sec-lede">Tables and chairs are the core of what we rent, for adults and for kids. Charger plates, dinnerware, glassware, cutlery and tablecloths are available to set them. Call for availability and prices.</p>
       </div>
       <ul class="layers">
         <li>
-          <svg class="motif" viewBox="0 0 96 96" aria-hidden="true">
-            <circle cx="48" cy="48" r="48" class="c-cloth"/>
-            <rect x="12" y="30" width="72" height="36" rx="4" class="c-brass"/>
-            <rect x="17" y="35" width="62" height="26" rx="2" class="s-brass-deep" stroke-width="1.5"/>
-          </svg>
+          <div class="photo">
+            <svg class="motif" viewBox="0 0 96 96" aria-hidden="true"><circle cx="48" cy="48" r="48" class="c-cloth"/><rect x="12" y="30" width="72" height="36" rx="4" class="c-brass"/><rect x="17" y="35" width="62" height="26" rx="2" class="s-brass-deep" stroke-width="1.5"/></svg>
+            <img src="photo-tables.jpg" alt="Photo of our 6 ft and 4 ft tables" loading="lazy" onerror="this.remove()">
+          </div>
           <h3>Tables</h3>
           <ul class="spec">
             <li>6 ft tables</li>
@@ -394,12 +401,10 @@ footer{padding-block:32px;border-top:1px solid var(--line);font-size:.9rem;color
           </ul>
         </li>
         <li>
-          <svg class="motif" viewBox="0 0 96 96" aria-hidden="true">
-            <circle cx="48" cy="48" r="48" class="c-cloth"/>
-            <rect x="25" y="18" width="46" height="10" rx="5" class="c-brass-deep"/>
-            <rect x="27" y="31" width="42" height="40" rx="10" class="c-brass"/>
-            <rect x="27" y="31" width="42" height="40" rx="10" class="s-brass-deep" stroke-width="1.5"/>
-          </svg>
+          <div class="photo">
+            <svg class="motif" viewBox="0 0 96 96" aria-hidden="true"><circle cx="48" cy="48" r="48" class="c-cloth"/><rect x="25" y="18" width="46" height="10" rx="5" class="c-brass-deep"/><rect x="27" y="31" width="42" height="40" rx="10" class="c-brass"/><rect x="27" y="31" width="42" height="40" rx="10" class="s-brass-deep" stroke-width="1.5"/></svg>
+            <img src="photo-adult-chairs.jpg" alt="Photo of our resin, Chiavari and folding chairs" loading="lazy" onerror="this.remove()">
+          </div>
           <h3>Adult chairs</h3>
           <ul class="spec">
             <li>Resin chairs</li>
@@ -408,12 +413,10 @@ footer{padding-block:32px;border-top:1px solid var(--line);font-size:.9rem;color
           </ul>
         </li>
         <li>
-          <svg class="motif" viewBox="0 0 96 96" aria-hidden="true">
-            <circle cx="48" cy="48" r="48" class="c-cloth"/>
-            <rect x="29" y="26" width="38" height="9" rx="4.5" class="c-brass-deep"/>
-            <rect x="31" y="38" width="34" height="30" rx="9" class="c-brass"/>
-            <rect x="31" y="38" width="34" height="30" rx="9" class="s-brass-deep" stroke-width="1.5"/>
-          </svg>
+          <div class="photo">
+            <svg class="motif" viewBox="0 0 96 96" aria-hidden="true"><circle cx="48" cy="48" r="48" class="c-cloth"/><rect x="29" y="26" width="38" height="9" rx="4.5" class="c-brass-deep"/><rect x="31" y="38" width="34" height="30" rx="9" class="c-brass"/><rect x="31" y="38" width="34" height="30" rx="9" class="s-brass-deep" stroke-width="1.5"/></svg>
+            <img src="photo-kids-chairs.jpg" alt="Photo of our kids’ white Chiavari and pink bow chairs" loading="lazy" onerror="this.remove()">
+          </div>
           <h3>Kids’ chairs</h3>
           <ul class="spec">
             <li>White Chiavari chair</li>
@@ -421,18 +424,37 @@ footer{padding-block:32px;border-top:1px solid var(--line);font-size:.9rem;color
           </ul>
         </li>
         <li>
-          <svg class="motif" viewBox="0 0 96 96" aria-hidden="true">
-            <circle cx="48" cy="48" r="48" class="c-cloth"/>
-            <circle cx="48" cy="48" r="34" class="c-brass"/>
-            <circle cx="48" cy="48" r="29" class="s-brass-deep" stroke-width="1.5"/>
-            <circle cx="48" cy="48" r="22" class="c-plate"/>
-            <circle cx="48" cy="48" r="15" class="s-plate-shade" stroke-width="2"/>
-          </svg>
+          <div class="photo">
+            <svg class="motif" viewBox="0 0 96 96" aria-hidden="true"><circle cx="48" cy="48" r="48" class="c-cloth"/><circle cx="48" cy="48" r="34" class="c-brass"/><circle cx="48" cy="48" r="29" class="s-brass-deep" stroke-width="1.5"/><circle cx="48" cy="48" r="22" class="c-plate"/><circle cx="48" cy="48" r="15" class="s-plate-shade" stroke-width="2"/></svg>
+            <img src="photo-table-settings.jpg" alt="Photo of our charger plates, dinnerware and glassware" loading="lazy" onerror="this.remove()">
+          </div>
           <h3>Table settings</h3>
           <ul class="spec">
             <li>Charger plates</li>
             <li>Dinnerware</li>
             <li>Glassware</li>
+          </ul>
+        </li>
+        <li>
+          <div class="photo">
+            <svg class="motif" viewBox="0 0 96 96" aria-hidden="true"><circle cx="48" cy="48" r="48" class="c-cloth"/><g fill="none" stroke="var(--brass)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M33 22V40M40 22V40M47 22V40"/><path d="M33 40Q33 49 40 49Q47 49 47 40"/><path d="M40 49V74"/><path d="M62 74V50"/></g><path d="M58 22Q70 28 66 50H58Z" class="c-brass"/></svg>
+            <img src="photo-cutlery.jpg" alt="Photo of our gold, silver and black cutlery" loading="lazy" onerror="this.remove()">
+          </div>
+          <h3>Cutlery</h3>
+          <ul class="spec">
+            <li><span class="sw sw-gold"></span>Gold cutlery</li>
+            <li><span class="sw sw-silver"></span>Silver cutlery</li>
+            <li><span class="sw sw-black"></span>Black cutlery</li>
+          </ul>
+        </li>
+        <li>
+          <div class="photo">
+            <svg class="motif" viewBox="0 0 96 96" aria-hidden="true"><circle cx="48" cy="48" r="48" class="c-cloth"/><path d="M14 32H82L79 58Q73 67 67 58Q61 67 55 58Q49 67 43 58Q37 67 31 58Q25 67 19 58Z" class="c-plate"/><rect x="14" y="28" width="68" height="7" rx="2" class="c-brass"/></svg>
+            <img src="photo-tablecloths.jpg" alt="Photo of our tablecloths" loading="lazy" onerror="this.remove()">
+          </div>
+          <h3>Tablecloths</h3>
+          <ul class="spec">
+            <li>Tablecloths</li>
           </ul>
         </li>
       </ul>
@@ -519,6 +541,10 @@ footer{padding-block:32px;border-top:1px solid var(--line);font-size:.9rem;color
             <label for="i-charger"><input id="i-charger" type="checkbox" name="item" value="charger plates"> Charger plates</label>
             <label for="i-dinner"><input id="i-dinner" type="checkbox" name="item" value="dinnerware"> Dinnerware</label>
             <label for="i-glass"><input id="i-glass" type="checkbox" name="item" value="glassware"> Glassware</label>
+            <label for="i-cgold"><input id="i-cgold" type="checkbox" name="item" value="gold cutlery"> Gold cutlery</label>
+            <label for="i-csilver"><input id="i-csilver" type="checkbox" name="item" value="silver cutlery"> Silver cutlery</label>
+            <label for="i-cblack"><input id="i-cblack" type="checkbox" name="item" value="black cutlery"> Black cutlery</label>
+            <label for="i-cloth"><input id="i-cloth" type="checkbox" name="item" value="tablecloths"> Tablecloths</label>
             <label for="i-other"><input id="i-other" type="checkbox" name="item" value="other items"> Something else</label>
           </div>
         </fieldset>
@@ -582,7 +608,7 @@ footer{padding-block:32px;border-top:1px solid var(--line);font-size:.9rem;color
 <script>
 (function () {
   /* Paste your Web3Forms access key between the quotes. Get one free at web3forms.com using the email that should receive requests. */
-  var ACCESS_KEY = 'PASTE_YOUR_WEB3FORMS_KEY_HERE';
+  var ACCESS_KEY = 'afdc8f13-af29-4ed2-9214-c2e8aff7599a';
   var ENDPOINT = 'https://api.web3forms.com/submit';
 
   var $ = function (id) { return document.getElementById(id); };
@@ -604,6 +630,15 @@ footer{padding-block:32px;border-top:1px solid var(--line);font-size:.9rem;color
     try {
       return d.toLocaleDateString('en-CA', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
     } catch (e) { return v; }
+  }
+
+  function fmtShort(v) {
+    if (!v) { return ''; }
+    var p = v.split('-');
+    if (p.length !== 3) { return ''; }
+    var d = new Date(+p[0], +p[1] - 1, +p[2]);
+    if (isNaN(d.getTime())) { return ''; }
+    try { return d.toLocaleDateString('en-CA', { weekday: 'short', month: 'short', day: 'numeric' }); } catch (e) { return v; }
   }
 
   function setStatus(text, kind) {
@@ -651,9 +686,13 @@ footer{padding-block:32px;border-top:1px solid var(--line);font-size:.9rem;color
     ];
     if (notes) { lines.push('', 'Notes: ' + notes); }
 
+    var shortDate = fmtShort($('f-date').value);
+    var subject = 'NEW BOOKING REQUEST: ' + name + (shortDate ? ' · ' + shortDate : '') + ' · ' + joinList(items);
+    if (subject.length > 140) { subject = subject.slice(0, 137) + '…'; }
+
     var payload = {
       access_key: ACCESS_KEY,
-      subject: 'New rental request from ' + name,
+      subject: subject,
       from_name: 'Secured Rentals website',
       name: name,
       message: lines.join('\n')
